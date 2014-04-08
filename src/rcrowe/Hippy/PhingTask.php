@@ -177,7 +177,7 @@ class PhingTask extends Task
             try {
                 $client->send($message);
             }
-            catch (Exception $e) {
+            catch (\Exception $e) {
                 if ($this->failOnError) {
                     throw $e;
                 }
